@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE generatorConfiguration PUBLIC
+        "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+<generatorConfiguration>
+    <!-- 本地数据库驱动程序jar包的全路径 -->
+    <classPathEntry location="C:\Users\zhouy\.m2\repository\mysql\mysql-connector-java\5.1.46\mysql-connector-java-5.1.46.jar"/>
+    <context id="context" targetRuntime="MyBatis3">
+        <commentGenerator>
+            <property name="suppressAllComments" value="false"/>
+            <property name="suppressDate" value="true"/>
+        </commentGenerator>
+        <!-- 数据库的相关配置 -->
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://s00-internal.advanpro.cn:3306/advanpro_oc_test_db?useSSL=true" userId="advanpro_dev_dba" password="g5RA1ONe5VYYANnH"/>
+        <javaTypeResolver>
+            <property name="forceBigDecimals" value="false"/>
+        </javaTypeResolver>
+        <!-- 实体类生成的位置 -->
+        <javaModelGenerator targetPackage="seed.entity" targetProject="C:/Users/zhouy/Desktop/seed\src\main\java\">
+            <property name="enableSubPackages" value="false"/>
+            <property name="trimStrings" value="true"/>
+        </javaModelGenerator>
+        <!-- *Mapper.xml 文件的位置 -->
+        <sqlMapGenerator targetPackage="mapper" targetProject="C:/Users/zhouy/Desktop/seed\src\main\resources\">
+            <property name="enableSubPackages" value="false"/>
+        </sqlMapGenerator>
+        <!-- Mapper 接口文件的位置 -->
+        <javaClientGenerator targetPackage="seed.mapper" targetProject="C:/Users/zhouy/Desktop/seed\src\main\java\" type="XMLMAPPER">
+            <property name="enableSubPackages" value="false"/>
+        </javaClientGenerator>
+        <table tableName="tb_orders"
+               domainObjectName="Order"
+               enableCountByExample="false"
+               enableDeleteByExample="false"
+               enableSelectByExample="false"
+               enableUpdateByExample="false"
+               enableInsert="false"
+               enableSelectByPrimaryKey="true"
+               enableUpdateByPrimaryKey="false"
+               enableDeleteByPrimaryKey="false"
+               selectByPrimaryKeyQueryId ="false"
+               selectByExampleQueryId="false">
+            <columnOverride column="logistics_info" javaType="java.lang.String" jdbcType="VARCHAR" />
+            <columnOverride column="invoice" javaType="java.lang.String" jdbcType="VARCHAR" />
+        </table>
+    </context>
+</generatorConfiguration>

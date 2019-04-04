@@ -1,0 +1,8 @@
+seed\mapper\OrderMapper.class
+seed\Application.class
+seed\tools\RestfulResult.class
+seed\controller\OrderController.class
+seed\entity\Order.class
+seed\config\WebMvcConfig.class
+seed\config\FastJsonProperties.class
+seed\service\OrderService.class
