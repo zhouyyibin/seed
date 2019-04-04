@@ -4,7 +4,7 @@ server:
 spring:
   datasource:
     name: test
-    url: jdbc:mysql://s00-internal.advanpro.cn:3306/advanpro_oc_test_db?useUnicode=true&&characterEncoding=utf8&serverTimezone=UTC
+    url: jdbc:mysql://localhost:3306/db?useUnicode=true&&characterEncoding=utf8&serverTimezone=UTC
     username: root
     password: 123456
     type: com.alibaba.druid.pool.DruidDataSource

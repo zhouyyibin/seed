@@ -11,21 +11,21 @@
             <property name="suppressDate" value="true"/>
         </commentGenerator>
         <!-- 数据库的相关配置 -->
-        <jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://s00-internal.advanpro.cn:3306/advanpro_oc_test_db?useSSL=true" userId="advanpro_dev_dba" password="g5RA1ONe5VYYANnH"/>
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://localhost:3306/db?useSSL=true" userId="root" password="`23456"/>
         <javaTypeResolver>
             <property name="forceBigDecimals" value="false"/>
         </javaTypeResolver>
         <!-- 实体类生成的位置 -->
-        <javaModelGenerator targetPackage="seed.entity" targetProject="C:/Users/zhouy/Desktop/seed\src\main\java\">
+        <javaModelGenerator targetPackage="seed.entity" targetProject="D:\word\project\seed\src\main\java\">
             <property name="enableSubPackages" value="false"/>
             <property name="trimStrings" value="true"/>
         </javaModelGenerator>
         <!-- *Mapper.xml 文件的位置 -->
-        <sqlMapGenerator targetPackage="mapper" targetProject="C:/Users/zhouy/Desktop/seed\src\main\resources\">
+        <sqlMapGenerator targetPackage="mapper" targetProject="D:\word\project\seed\src\main\resources\">
             <property name="enableSubPackages" value="false"/>
         </sqlMapGenerator>
         <!-- Mapper 接口文件的位置 -->
-        <javaClientGenerator targetPackage="seed.mapper" targetProject="C:/Users/zhouy/Desktop/seed\src\main\java\" type="XMLMAPPER">
+        <javaClientGenerator targetPackage="seed.mapper" targetProject="D:\word\project\seed\src\main\java\" type="XMLMAPPER">
             <property name="enableSubPackages" value="false"/>
         </javaClientGenerator>
         <table tableName="tb_orders"
